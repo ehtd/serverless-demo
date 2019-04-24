@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+.env
+
+# serverless packages
+.serverless/*
+
+# vscode https://code.visualstudio.com/
+.vscode/*
+typings/*
+typings.json
+
+.idea/
+

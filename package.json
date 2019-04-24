@@ -1,0 +1,29 @@
+{
+  "name": "serverless-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/handler.js",
+  "scripts": {
+    "deploy:dev:all": "./bin/deploy.sh -s dev",
+    "deploy:dev:function": "./bin/deploy.sh -s dev -f simple",
+    "invoke:local": "serverless invoke local -f simple",
+    "invoke:dev": "./bin/invoke.sh -s dev -f simple",
+    "pack:dev": "serverless package --verbose -s dev",
+    "remove:dev:all": "./bin/remove.sh -s dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehtd/serverless-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehtd/serverless-demo/issues"
+  },
+  "homepage": "https://github.com/ehtd/serverless-demo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^1.41.1"
+  }
+}
