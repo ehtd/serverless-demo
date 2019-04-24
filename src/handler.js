@@ -1,7 +1,7 @@
 'use strict';
 
 const simple = async (event, context, callback) => {
-    callback(null, 'Taco time once again');
+    callback(null, 'Taco time');
 };
 
 module.exports = {
