@@ -1,7 +1,12 @@
 'use strict';
 
 const simple = async (event, context, callback) => {
-    callback(null, 'Taco time');
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify({ data: 'Sandwich time again' }),
+    };
+
+    callback(null, response);
 };
 
 module.exports = {

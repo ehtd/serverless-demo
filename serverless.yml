@@ -25,3 +25,7 @@ provider:
 functions:
   simple:
     handler: src/handler.simple
+    events:
+      - http:
+          path: simple
+          method: get
